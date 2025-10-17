@@ -75,10 +75,16 @@ struct SortingDetailView: View {
                             break // нічого не робимо — бо MatrixSortView окремо
                         }
                     }
+                    .frame(width: 200, height: 20)
                     .buttonStyle(.borderedProminent)
                     Button("Random Array"){
-                        //let numbers = random_10_nums()
-                    }.buttonStyle(.borderedProminent)
+                        // Generate 10 random numbers (Double), convert to Ints for general usage, join as space-separated string
+                        //i think its good idea
+                        let randomDoubles = random_10_nums()
+                        let ints = randomDoubles.map { Int($0.rounded()) }
+                        input = ints.map(String.init).joined(separator: " ")
+                    }
+                    .frame(width: 200, height: 20).buttonStyle(.borderedProminent)
                     
                     switch method {
                     case .selection:
