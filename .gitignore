@@ -1,0 +1,173 @@
+# macOS files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon files
+Icon?
+._*
+
+# Thumbnails
+._.DS_Store
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# macOS metadata
+.fseventsd
+.apdisk
+
+# Xcode
+## User settings
+xcuserdata/
+*.xcuserstate
+*.xccheckout
+*.xcscmblueprint
+
+## Build products
+build/
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.dSYM.tar.gz
+
+## Index
+*.xccrashpoint
+*.xcindex
+index.noindex/
+
+## SwiftPM integration in Xcode
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.pins
+Package.resolved
+.packages/
+Artifacts/
+
+# CocoaPods
+Pods/
+!Podfile
+!Podfile.lock
+# If you commit Pods, comment out the line above.
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+Carthage/Build*/**
+
+# Accio
+Dependencies/
+.accio/
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/readme.md
+
+# Tuist
+Tuist/Dependencies/
+.graph/
+Derived/
+
+# Bazel
+bazel-*
+bazel-*/**
+bazel-out/
+bazel-bin/
+bazel-testlogs/
+
+# SPM/Xcode Cache
+*.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# SwiftLint / SwiftFormat cache
+.swiftlint.cache
+.swiftformat
+
+# Coverage / Reports
+*.gcno
+*.profraw
+*.profdata
+coverage/
+codecov.yml
+
+# Logs
+*.log
+*.trace
+
+# Archives
+*.xcarchive
+
+# Localization
+*.stringsdict
+*.strings~orig
+*.strings~md5
+
+# Simulator
+Library/Developer/CoreSimulator/Devices/**/data/Containers/Data/Application/*/Library/Caches/*
+Library/Developer/CoreSimulator/Devices/**/data/Library/Caches/*
+
+# Package manager credentials
+*.netrc
+
+# Editor/Tooling
+.vscode/
+.idea/
+*.iml
+
+# Ruby/Bundler
+.bundle/
+vendor/bundle/
+
+# Node (if you have scripts/tools)
+node_modules/
+npm-debug.log*
+yarn-error.log
+.pnpm-store/
+.pnp.*
+.yarn/*
+!.yarn/versions
+
+# Swift Testing artifacts (if any custom outputs)
+.TestArtifacts/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Firebase / Google
+GoogleService-Info.plist
+GoogleService-Info-*.plist
+# If you intend to commit these, remove the lines above.
+
+# Secrets
+*.key
+*.pem
+*.p12
+*.mobileprovision
+*.certSigningRequest
+secrets.*
+.secret
+
+# Generated files
+*.generated.swift
+*.g.swift
+*.pbxproj.old
+*.pbxproj.backup
+
+# Temporary files
+*.tmp
+*.swp
+*~
