@@ -1,3 +1,5 @@
+import SwiftUI
+
 // MARK: - SortingDetailView
 struct SortingDetailView: View {
     let method: SortingMethod
@@ -14,6 +16,10 @@ struct SortingDetailView: View {
     var body: some View {
         if method == .matrixQuickSort {
             MatrixSortView()
+        } else if method == .compare {
+            // Показуємо тільки CompareView, вся асинхронна логіка всередині нього
+            CompareView()
+                .padding()
         } else {
             HStack(alignment: .top, spacing: 40) {
                 // MARK: - LEFT SIDE
@@ -59,7 +65,7 @@ struct SortingDetailView: View {
                             steps = mergeSteps.map { $0.map { Int($0) } }
                             sortedResult = steps.last?.map { Int($0) } ?? []
                             
-                        case .matrixQuickSort:
+                        case .matrixQuickSort, .compare:
                             break
                         }
                     }
@@ -105,7 +111,7 @@ struct SortingDetailView: View {
                             Text("Sorted: \(sortedCities.joined(separator: ", "))")
                                 .font(.headline)
                         }
-                    case .matrixQuickSort:
+                    case .matrixQuickSort, .compare:
                         EmptyView()
                     }
                     

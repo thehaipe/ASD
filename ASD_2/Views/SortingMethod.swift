@@ -10,6 +10,8 @@ enum SortingMethod: String, CaseIterable, Identifiable {
     case shell = "Shell Sort"
     case matrixQuickSort = "QuickSort"
     case megreSort = "Merge Sort"
+    case countingSort = "Count Sort"
+    case compare = "Compare" // Додано: окремий екран для порівняння
 
     var id: String { rawValue }
 
@@ -19,9 +21,12 @@ enum SortingMethod: String, CaseIterable, Identifiable {
         case .shell: return "arrow.left.and.right"
         case .matrixQuickSort: return "tablecells"
         case .megreSort: return "tablecells"
+        case .countingSort: return "plus.circle"
+        case .compare: return "chart.bar.doc.horizontal" // Іконка для Compare
         }
     }
 }
+
 func random_10_nums() -> [Double] {
     var result : [Double] = []
     for _ in 0..<10 {
